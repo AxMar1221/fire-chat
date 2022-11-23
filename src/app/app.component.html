@@ -8,4 +8,8 @@
     </button>
   </div>
   <app-login *ngIf="!_cs.user.uid"></app-login>
+
+  <div class="chat-window" *ngIf="_cs.user.uid">
+    <app-chat></app-chat>
+  </div>
 </div>
